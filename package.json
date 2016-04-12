@@ -1,13 +1,19 @@
 {
-  "name": "unit-12-database",
+  "name": "solo-project-2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/server.js",
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "start": "node save-data/postgresql-orm.js & node server/server.js"
+  },
   "dependencies": {
     "express": "^4.13.3",
+    "request": "^2.69.0",
     "pg": "^4.4.3",
-    "sequelize": "^3.13.0"
+    "sequelize": "^3.13.0",
+    "angular": "^1.5.0",
+    "angular-route": "^1.5.0"
   }
 }
