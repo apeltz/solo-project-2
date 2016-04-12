@@ -1,0 +1,36 @@
+angular
+  .module('Codesmith.HomeController', ['ngRoute')
+  .controller('HomeController', HomeController);
+
+
+function HomeController($scope) {
+
+  $scope.unit = "Unit 10 Prototype";
+  $scope.name = UserFactory.name;
+
+  $scope.sortMethod = '-created_at';
+
+  $scope.searchTerm = '';
+
+  $scope.getMessages = function() {
+    MessageFactory.fetch().then(function(data, err) {
+  	 if(err) console.error(err);
+  	 $scope.messages = data.data;
+     $scope.$apply();
+     setTimeout($scope.getMessages, 1000)
+    });
+  };
+
+  $scope.getMessages();
+
+  $scope.messageToPost = '';
+
+ 	$scope.postMessage = function(){
+
+    MessageFactory.send($scope.name, $scope.messageToPost);
+
+    $scope.messageToPost = '';
+
+ 	}
+
+}
