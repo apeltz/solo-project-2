@@ -7,7 +7,10 @@ const server = http.createServer(app);
 
 //routing here
 
-app.use(express.static(path.join(__dirname, '../client/')))
+app.use(express.static(path.join(__dirname, '../client/')));
+
+
+//rounte for ng node modules
 
 
 app.listen(3000, () => {

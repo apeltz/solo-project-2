@@ -2,10 +2,8 @@
   "name": "solo-project-2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "author": "",
   "license": "ISC",
-  "comment": "node save-data/postgresql-orm.js & node server/server.js",
   "scripts": {
     "start": "nodemon server/server.js"
   },

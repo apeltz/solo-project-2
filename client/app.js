@@ -1,16 +1,20 @@
 var app = angular
-  .module('myApp', ['ngRoute']);
+  .module('myApp', ['ngRoute', 'Myapp.MainController', 'Myapp.HeroController', 'Myapp.UniverseController']);
 
 app.config(configFunction);
 
 function configFunction($routeProvider, $locationProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: './views/home.html',
-      controller: 'HomeController'
+      templateUrl: './views/main.html',
+      controller: 'MainController'
     })
-    .when('/about', {
-    	templateUrl: './views/about.html',
-    	controller: 'AboutController'
-    });
+    .when('/myhero', {
+      templateUrl: './views/myhero.html',
+      controller: 'HeroController'
+    })
+    .when('/universe', {
+     templateUrl: './views/universe.html',
+     controller: 'UniverseController'
+   });
 }
