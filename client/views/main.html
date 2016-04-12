@@ -1,2 +1,18 @@
-<h1>Main</h1>
-{{user3}}
+<h1>Get Started</h1>
+
+
+<div id="signup">
+  <form ng-submit="createUser()">
+  	<input type="text" ng-model='createUsername' placeholder='Username'>
+    <input type="text" ng-model='createPassword' placeholder='Password'>
+  	<button type="submit">Create User</button>
+  </form>
+</div>
+
+<div id="login">
+  <form ng-submit="loginUser()">
+  	<input type="text" ng-model='loginUsername' placeholder='Username'>
+    <input type="text" ng-model='loginPassword' placeholder='Password'>
+  	<button type="submit">Login</button>
+  </form>
+</div>

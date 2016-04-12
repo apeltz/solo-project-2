@@ -2,7 +2,7 @@ angular
   .module('Myapp.HeroController', ['ngRoute'])
   .controller('HeroController', HeroController);
 
-console.log("Herocontroller running!!!");
+console.log("HeroController running!!!");
 function HeroController($scope) {
 
   $scope.user = 'Aaron';

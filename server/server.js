@@ -9,8 +9,9 @@ const server = http.createServer(app);
 
 app.use(express.static(path.join(__dirname, '../client/')));
 
-
-//rounte for ng node modules
+app.get('/', function(req, res){
+  console.log(req);
+})
 
 
 app.listen(3000, () => {
