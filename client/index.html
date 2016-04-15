@@ -4,11 +4,14 @@
     <meta charset="utf-8">
     <title>Test Page</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-sanitize.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-animate.min.js"></script>
     <script type="text/javascript" src="./controllers/mainController.js"></script>
-    <script type="text/javascript" src="./controllers/heroController.js"></script>
+    <script type="text/javascript" src="./controllers/drawController.js"></script>
     <script type="text/javascript" src="./controllers/universeController.js"></script>
+    <script type="text/javascript" src="./factories/userFactory.js"></script>
     <script type="text/javascript" src="./app.js"></script>
 
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css">
@@ -16,9 +19,6 @@
 
   </head>
   <body ng-app='myApp'>
-    <div>
-      Main App Header
-    </div>
     <div class="container" ng-view>
       <!-- views will render here -->
     </div>

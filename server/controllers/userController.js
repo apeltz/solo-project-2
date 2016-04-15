@@ -15,16 +15,24 @@ var UserController = sequelize.define('usertable', {
     primaryKey: true,
     autoIncrement: true
   },
-  username: Sequelize.STRING,
-  password: Sequelize.STRING,
+  un: Sequelize.STRING,
+  pw: Sequelize.STRING,
+  color1: Sequelize.STRING,
 })
 
+
 //creates individual message
-UserController.create((username, password, color1){
-  username: 'Test User',
-  password: 'Test Password',
-  color1: 'red'
+UserController.create ({
+  un: 'Test User',
+  pw: 'Test Password',
+  color1: 'Test Color'
 });
+
+// UserController.login ({
+//   un: 'Test User',
+//   pw: 'Test Password',
+//   color1: 'Test Color'
+// });
 
 
 

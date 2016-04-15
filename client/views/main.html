@@ -1,18 +1,26 @@
 <h1>Get Started</h1>
 
 
-<div id="signup">
+<div class="loginsignup">
+<h3>New User?</h3>
   <form ng-submit="createUser()">
   	<input type="text" ng-model='createUsername' placeholder='Username'>
-    <input type="text" ng-model='createPassword' placeholder='Password'>
+    <input type="password" ng-model='createPassword' placeholder='Password'>
   	<button type="submit">Create User</button>
   </form>
+  <div class="errormsg" ng-model='signupResult'>
+    {{signupResult}}
+  </div>
 </div>
 
-<div id="login">
+<div class="loginsignup">
+  <h3>Existing User?</h3>
   <form ng-submit="loginUser()">
   	<input type="text" ng-model='loginUsername' placeholder='Username'>
-    <input type="text" ng-model='loginPassword' placeholder='Password'>
+    <input type="password" ng-model='loginPassword' placeholder='Password'>
   	<button type="submit">Login</button>
   </form>
+  <div class="errormsg" ng-model='loginResult'>
+      {{loginResult}}
+  </div>
 </div>

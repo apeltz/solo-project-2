@@ -1,0 +1,91 @@
+* {
+  /*border: 1px solid green;*/
+}
+body {
+  display: block;
+  text-align: center;
+}
+h1 {
+  color: royalblue;
+}
+h4 {
+  float: left;
+  margin: 0;
+  paddin: 0;
+}
+.loginsignup {
+  display: inline-block;
+  margin: 10px;
+  width: 300px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 10px 5px -6px rgba(222, 209, 222, 1);
+  -moz-box-shadow: 10px 10px 5px -6px rgba(222, 209, 222, 1);
+  box-shadow: 10px 10px 5px -6px rgba(222, 209, 222, 1);
+}
+input {
+  margin: 5px;
+  padding: 5px;
+  width: 200px;
+}
+button {
+  width: 220px;
+  padding: 5px;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+}
+.errormsg {
+  display: inline-block;
+  margin: 30px 0 0 0;
+  width: 250px;
+  color: red;
+  font-size: 14px;
+}
+#canvaswrapper {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 650px;
+}
+#canvaswrapper:hover{
+  cursor: cell;
+}
+#tools {
+  display: inline-block;
+  padding: 8px;
+  margin: 0 0 10px 0;
+  width: 580px;
+  background-color: blanchedalmond;
+  /*border: 1px solid dimgray;*/
+}
+#tools:hover {
+cursor: default;
+}
+#currentColor {
+  float: left;
+  margin: 0 10px 0 30px;
+  width: 60px;
+  height: 20px;
+  border: 1px solid black;
+}
+#selectColor {
+  float: left;
+}
+#saveArtBtn {
+  display: inline-block;
+  margin: 10px 0 0 0;
+}
+#canvas {
+  display: block;
+}
+.gridsquare {
+  display: inline-block;
+  margin: -2px 0 -2px 0;
+  padding: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px dotted white;
+}

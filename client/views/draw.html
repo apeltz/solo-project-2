@@ -1,0 +1,24 @@
+<h1>Draw</h1>
+<h2>Welcome, {{user}}!</h2>
+
+<div id="canvaswrapper" ng-mousedown="mousedown=true" ng-mouseup="mousedown=false">
+  <div id="tools">
+    <h4>Tool Dock:</h4>
+    <div id="currentColor" style="background-color:{{selectedColor}}"></div>
+    <form id="selectColor">
+    	<select ng-model='selectedColor'>
+    		<option value="black">Black</option>
+    		<option value="red">Red</option>
+    		<option value="green">Green</option>
+    		<option value="yellow">Yellow</option>
+    	</select>
+    </form>
+
+  </div>
+
+  <div id="canvas">
+    <div class="gridsquare" ng-repeat='square in canvas' style="background-color:{{square.color}}" id=`{{square.id}}` ng-mouseover="paint()">
+    </div>
+  </div>
+  <button id="saveArtBtn">Save to User Gallery</button>
+</div>
